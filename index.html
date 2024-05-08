@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nishabd</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f5f5f5;
+        margin: 0%;
+        padding: 250px;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        background: linear-gradient(rgba(210, 255, 159, 0.689),rgba(218, 255, 153, 0.453)),url("1316621.webp");
+        background-size: cover;
+    }
+   
+    #nishabdContainer {
+        position: relative;
+        height: 50vh;
+       
+        
+        
+    }
+    #welcome {
+        font-size: 25px;
+        opacity: 1;
+        animation: moveUpAndFadeOut 3s 3s forwards; /* Delaying animation for 3 seconds */
+    }
+    #nishabd {
+        font-size: 80px;
+        font-weight: 700;
+        margin: 0;
+        opacity: 1;
+        animation: moveUpAndFadeOut 6s 3s forwards; /* Delaying animation for 3 seconds */
+    }
+    #languageSelection {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(150%);
+        opacity: 0;
+        animation: moveUpAndFadeIn 2s 3s forwards;
+    }
+    h2 {
+        font-size: 1.5em;
+        color: #000000;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        background-color: #145a16;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    @keyframes moveUpAndFadeOut {
+        0% { 
+            opacity: 1;
+            transform: translateY(0%);
+        }
+        100% { 
+            opacity: 0;
+            transform: translateY(-2000%);
+        }
+    }
+    @keyframes moveUpAndFadeIn {
+        0% { 
+            opacity: 0;
+            transform: translateX(-50%) translateY(100%);
+        }
+        100% { 
+            opacity: 1;
+            transform: translateX(-50%) translateY(-200%);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="overlay">
+<div id="nishabdContainer">
+    <div id="welcome">Welcome to</div>
+    <div id="nishabd">नि-shabd</div>
+</div>
+<div id="languageSelection">
+    <h2>Select your language preference:</h2>
+    <button onclick="selectLanguage('English')">English</button>
+    <button onclick="selectLanguage('Hindi')">Hindi</button>
+    <button onclick="selectLanguage('Gujarati')">Gujarati</button>
+    <!-- Add more language buttons as needed -->
+</div>
+</div>
+
+<script>
+    function selectLanguage(language) {
+        alert("Your language preference is: " + language);
+        // Here you can redirect to a different page or perform other actions based on the language selection
+    }
+</script>
+</body>
+</html>
