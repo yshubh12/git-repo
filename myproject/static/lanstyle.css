@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inria+Sans:ital@0;1&family=Kaushan+Script&family=Quicksand&family=Varela+Round&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inria+Sans:ital@0;1&family=Kaushan+Script&family=Quicksand&family=Varela+Round&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inria+Sans:ital@0;1&family=Kaushan+Script&family=Quicksand&family=Varela+Round&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Condensed:wght@900&display=swap');
+
+
+body{
+    font-family: 'Inria Sans';
+    color: rgb(24, 24, 22);
+    line-height: 1.7;
+    background-color: #000000
+   
+  
+}
+/* navbar */
+.navbar{
+    background-color: #0a0a0a;
+    height: 10vh;
+}
+/* anchor */
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-family: 'Roboto Condensed';
+    font-weight: 900;
+    font-size: 5px;
+}
+a:hover a:active{
+    color: rgb(185, 110, 122) !important;
+   
+}
+
+/* search bar */
+.form-control  {
+    width: 30rem;
+    border: #b16d7e;
+    padding-left: 1.5rem;
+    color: white;
+    margin-left: 5rem;
+}
+.form-control:active, .form-control:hover{
+    color: white;
+    border: #b16d7e !;
+}
+
+/* buttons */
+.btn-nav{
+    
+    padding:0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-image: linear-gradient(to right, #E6A4B4, #b16d7e);
+    color: #ffffff !important;
+    transition: all 0.3s ease-in-out;
+    
+    justify-content: center;
+}
+video{
+    height: 70vh;
+    margin: 2rem;
+    z-index: 2;
+}
+.hero-section{
+    height: 90vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.39),rgba(255, 255, 255, 0.308)), url(premium_photo-1675323792781-c9dcee161fcb.webp);
+    background-size: cover;
+    background-repeat: repeat-x;
+    display: flex;
+    
+    position: relative;
+}
+.hero-left{
+    z-index: 2;
+    
+    margin-left: 3rem;
+    width: 55vw;
+    
+}
+.hero-left h1{
+    font-family: 'DM Serif Display';
+   
+    font-size: 5rem;
+    color: rgb(196, 189, 189);
+    margin-top: 16vh;
+}
+.hero-left p{
+    font-size: 1.5rem;
+    color: rgb(155, 155, 155);
+}
+.login{
+    height: 80vh;
+    width: 30vw;
+    background: linear-gradient(135deg, rgba(66, 47, 88, 0.377),rgba(0, 0, 0, 0.644));
+    border-radius: 1rem;
+    margin-top: 5vh;
+
+    backdrop-filter: blur(9px) saturate(159%);
+    -webkit-backdrop-filter: blur(9px) saturate(159%);
+    background-color: rgba(43, 46, 73, 0.24);
+    border-radius: 2rem;
+    padding: 0 2.5rem 5rem 2.5rem;
+  
+}
+.login h1{
+    text-align: center;
+    color: rgb(194, 194, 194);
+    padding-top: 1vh;
+    font-weight: 900;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    font-family:'Roboto Condensed';
+}
+.login label{
+    color: white;
+   
+}
+.login .login-label{
+    margin-top: 5vh;
+}
+.login i{
+    margin-right: 5px;
+}
+.login input{
+    width: 100%;
+    margin-left: 0%;
+    background-color: #74747473;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    color: #ffffff;
+}
+.login input:active, .login input:focus{
+    background-color: #74747473;
+}
+
+button {
+    font-size: 13px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: #fff;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+
+.btn-main{
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    width: 10vw;
+
+  }
+  .btn-primary{
+    width: 7vw;
+    padding: 3px 5px 3px 5px;
+    margin: 5px;
+}
+  
+  
+.btn-main:hover {
+    color: rgb(17, 17, 17);
+    box-shadow: inset 0 -100px 0 0 #ffffff;
+  }
+  
+.btn-main:active {
+    transform: scale(0.9);
+}
+.areYou{
+    height: 50vh;
+    width: 30vw;
+    margin-left: 35vw;
+    margin-top: 20vh;
+    padding: 6vh 2vw 4vh 2vw;
+    z-index: 10;
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(3px) saturate(200%);
+    background-color: rgba(19, 19, 19, 0.49);
+    border-radius: 2rem;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.areYou h5, .areYou h3{
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    color: rgb(243, 241, 241);
+    padding-top: 2vh;
+
+}
+.areYou .btn-main{
+    margin-top: 5vh;
+    
+}
+.areYou div{
+    display: flex;
+    justify-content: center;
+}
+.areYou .btn-main:hover{
+    color: rgb(27, 27, 27);
+}
+.nav-button .btn-main{
+    transform: scale(0.6);
+    margin-left: 0px;
+
+    
+}
+.nav-button{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  
+}
+.nav-button a{
+    width: 5.5rem;
+}

@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans&family=Poppins&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: white;
+    position: relative;
+    
+}
+.heading{
+  /* height: 300px; */
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  width: 100%;
+ 
+  min-height: 280px;
+  position: relative;
+}
+
+.heading h1{
+  text-align: center;
+  font-size: 130px;
+  margin-top: 100px;
+  transition: 0.3s;
+  color: rgb(0, 0, 0);
+  text-shadow: -15px 5px 20px #fbff00;
+}
+#sitename span{
+
+  transition: 0.2s;
+}
+
+#sitename:hover{
+  letter-spacing: 3px;
+}
+
+#tagline{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-size: 40px;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+.header2{
+    display: flex;
+    height: 10vh;
+    /* border: 1px solid black; */
+    background-color: #0d2113;
+    justify-content: right;
+    
+}
+
+.header2 .navbar {
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #0d2113;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-bottom: 2px solid;
+    /* border-radius: 5px; */
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.header2 .searching{
+  border-radius: 40px;
+  background-color: #dbf0db;
+    border: 1px solid rgb(185, 185, 185);
+    margin: auto;
+    height: 35px;
+    margin-left: 250px;
+    width: 40%;
+    padding-right: 10px;
+}
+.header2 .searching input{
+  background: transparent;
+  color: black;
+  padding-left: 15px;
+  outline: none;
+  border: 0;
+  margin-top: 2px;
+  border-radius: 5px;
+    height: 28.99px;
+    width: 85%;
+}
+.header2 .searching button{
+  border: 0;
+  background: transparent;
+    margin-left: 1px;
+    margin-top: 3px;
+    padding: 5px;
+    cursor: pointer;
+    float: right;
+}
+/* video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  
+} */
+
+
+.account-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #8dc896;
+
+}
+
+.account-options hr{
+  height: 10px;
+}
+
+.account-options a {
+    margin-left: 20px;
+    color: #232f3e;
+    text-decoration: none;
+}
+
+.account-options a:hover {
+    text-decoration: underline;
+}
+
+.lang_option button{
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 78%;
+    height: 330px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 50px black;
+}
+
+.slideshow-container .images{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  background-color: rgba(0,0,0,0.6);
+  height: 20%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -32px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 30px 30px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* -------------------------------------------------------------------------------------------- */
+
+.container{
+  width: 1000px;
+  margin: auto;
+  transition: 0.5s;
+  /* border: 10px solid black; */
+  margin-bottom: 100px;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-top: 50px;
+}
+
+header .shopping{
+  position: relative;
+  text-align: right;
+}
+header .shopping img{
+  width: 40px;
+}
+header .shopping span{
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+}
+.list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap:40px;
+  margin-top: 50px;
+}
+.list .item{
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0px 10px #9c9c9c;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.list .item:hover{
+  box-shadow: 0 0px 10px #000000;
+}
+.list .item img{
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  margin-top: 10px;
+  position: relative;
+}
+.list .item .title{
+  margin-top: 20px;
+  font-weight: 600;
+}
+.list .item .price{
+  margin: 10px;
+}
+.list .item button{
+  background-color: #1C1F25;
+  border: 0px;
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  width: 48%;
+  padding: 10px;
+}
+.list .item button:hover{
+  box-shadow: 0px 0px 10px black;
+  color: #fff;
+}
+.card{
+  position: fixed;
+  top:0;
+  left: 100%;
+  width: 430px;
+  background-color: #000000;
+  height: 100vh;
+  transition: 0.5s;
+  margin-left: 70px;
+}
+.active .card{
+  left: calc(100% - 500px);
+}
+.active .container{
+ transform: translateX(-200px);
+}
+.card h1{
+  color: #ffffff;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.card .checkOut{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+  background-color: #1fa841;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+  background-color: #1C1F25;
+  color: #fff;
+}
+.listCard li{
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #fff;
+  row-gap: 10px;
+}
+.listCard li div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+  margin:5px 0px;
+}
+
+.listCard li:nth-child(odd){
+  background-color: rgb(34, 34, 34);
+}
+.listCard li img{
+  width: 50%;
+}
+.listCard li button{
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
+.listCard .count{
+  margin: 0 10px;
+}
+
+/* Cart---------------------------------------------------------------------------------------- */
+
+.Cartbox{
+  /* visibility: hidden; */
+  text-align: center;
+  background-color:white;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 0px 0px 10px black;
+  padding: 35px;
+  position: fixed;
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 0px;
+  z-index: 1;
+}
+.Cartbox button{
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  margin-left: -48%;
+  margin-top: -3.7%;
+  cursor: pointer;
+}
+.account-options #cartbutton span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: 100px;
+  right: 78px;
+}
+
+.Cartbox h3{
+  background-color: black;
+  padding: 7px;
+  color: white;
+}
+
+.Cartbox .listCart .item img{
+  width: 100%;
+}
+.Cartbox .listCart .item{
+  display: grid;
+  grid-template-columns: 70px 150px 170px 1fr;
+  gap: px;
+  text-align: center;
+  align-items: center;
+}
+
+.Cartbox .listCart .quantity span{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.Cartbox .listCart .quantity span:nth-child(2){
+  background-color: transparent;
+  color: black ;
+}
+
+.Cartbox .listCart .item:nth-child(even){
+  background-color: rgb(189, 189, 189);
+}
+.listCart{
+  overflow: auto;
+}
+
+
+
+/* footer -------------------------------------------------------------------------------------- */
+.contain{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+  /* height: 100px; */
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #0d2113;
+  padding-top: 60px ;
+  padding-bottom: 60px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 10px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.section{
+  height: 80vh;
+  background: url(bgimg.jpg);
+  background-size: cover;
+  position: static;
+}

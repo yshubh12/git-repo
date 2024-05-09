@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    .container:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.734);
+      background-color: #f9f9f9;
+      transform: scale(1.02);
+    }
+
+    .container-enter {
+      opacity: 0;
+    }
+
+    .container-enter-active {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #3498db; /* Updated color */
+      margin-bottom: 20px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .container:hover h2 {
+      color: #007bb5;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      color: #555;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .container:hover label {
+      color: #333;
+      cursor: pointer;
+    }
+
+    input {
+      width: calc(100% - 16px);
+      padding: 8px;
+      margin: 5px 0 15px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      border: 1px solid #ddd;
+    }
+
+    input:focus {
+      border-color: #3498db; 
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #007bb5;
+      transform: scale(1.05);
+    }
+
+    .signin-link {
+      text-align: center;
+      margin-top: 15px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .container:hover .signin-link {
+      opacity: 1;
+    }
+
+    .signin-link a {
+      color: #3498db;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .signin-link a:hover {
+      color: #007bb5;
+    }
+
+    .signin-link a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #3498db; 
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    .signin-link a:hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" v-if="showContainer">
+  <transition name="container" appear>
+    <h2>Sign Up</h2>
+  </transition>
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="password">Confirm Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <div class="signin-link">
+    Already have an account? <a href="sign in.html">Sign in</a>
+  </div>
+</div>
+
+</body>
+</html>

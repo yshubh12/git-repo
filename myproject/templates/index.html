@@ -15,7 +15,7 @@
         justify-content: center;
         align-items: center;
         overflow-y: hidden;
-        background: linear-gradient(rgba(210, 255, 159, 0.689),rgba(218, 255, 153, 0.453)),url("1316621.webp");
+        background: linear-gradient(rgba(210, 255, 159, 0.689),rgba(218, 255, 153, 0.453)),url("static/1316621.webp");
         background-size: cover;
     }
    
@@ -95,18 +95,13 @@
 </div>
 <div id="languageSelection">
     <h2>Select your language preference:</h2>
-    <button onclick="selectLanguage('English')">English</button>
-    <button onclick="selectLanguage('Hindi')">Hindi</button>
-    <button onclick="selectLanguage('Gujarati')">Gujarati</button>
+    <a href="en" ><button onclick="selectLanguage('English')">English</button></a>
+    <a><button onclick="selectLanguage('Hindi')">Hindi</button></a>
+    <a><button onclick="selectLanguage('Gujarati')">Gujarati</button></a>
     <!-- Add more language buttons as needed -->
 </div>
 </div>
 
-<script>
-    function selectLanguage(language) {
-        alert("Your language preference is: " + language);
-        // Here you can redirect to a different page or perform other actions based on the language selection
-    }
-</script>
+
 </body>
 </html>

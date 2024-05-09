@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+.nav img{
+    height: 60px;
+    border-radius: 15px;
+}
+.nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    width: 100%;
+}
+.nav h4{
+    font-size: 14px;
+   
+    
+}
+video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    z-index: -2;
+}
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page1 h1{
+    font-size: 90px;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    -webkit-text-stroke: 2px #95c11e;
+}
+.page1 h2{
+    font-size: 30px;
+}
+.page1 h4{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 10;
+    width: 500px;
+}
+.page1 h1::before{
+    content: "CONNECT.LEARN.THRIVE.";
+    position:absolute;
+    color:black;
+    top:-4px;
+    left: -5px;
+    -webkit-text-stroke: 2px #95c11e;
+    z-index: -1;
+}
+.page2{
+    min-height:100vh;
+    width: 100vw;
+}
+.logo{
+    border-radius: 5px;
+}
+.page1 h2{
+    -webkit-text-stroke: 1px #95c11e;
+}
+.nav h4:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+}
+.img img{
+    height: 200px;
+    border-radius: 50%
+}
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    padding: 0 50px;
+}
+.about h3{
+    font-size: xx-large;
+}
+.cards-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 50px;
+}
+.card{
+    height: 70%;
+    width: 20%;
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; 
+    text-align: center;
+}
+#card1{
+    background-image: url(card2.jpeg);
+
+}
+#card2{
+    background-image: url(card1.jpeg);
+}
+#card3{
+    background-image: url(card3.jpeg);
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.card p{
+    font-weight: 1000;
+    padding: 10px;
+}
+.overlay{
+    height: 100%;
+    background-color: #f15bb5;
+
+}
+.banner{
+    background-color: #95c11e;
+    height: 25vh;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
+}
+.banner h3{
+    font-size: x-large;
+    padding-bottom: 25px;
+}
+.page3{
+    height: 100vh;
+    background-color: black;
+}
