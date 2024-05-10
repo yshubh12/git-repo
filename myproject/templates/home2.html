@@ -37,24 +37,14 @@
     </div>
   </div>
   <div class="account-options">
-    <div class="lang_option">
-      <!-- <label for="langauge">Select language : </label>
-      <select name="" id="">
-        <option value="Hindi">English</option>
-        <option value="Hindi">Hindi</option>
-        <option value="Hindi">Panjabi</option>
-        <option value="Hindi">Gujrati</option>
-      </select> -->
-      <button id="eng_btn">EN</button>
-      <button id="hindi_btn">HI</button>
-    </div>
+    <div id="google_translate_element"></div>
+    
     <div>
     <span id="welcome_user">Welcome, User!</span>
     <a href="#" id="chatbot">ChatBot</a>
     <a href="#" id="your_account">Your Account</a>
     <!-- <a href="#" id="cartbutton" onclick="cart()">Cart <span>0</span></a> -->
     <a href="sign in.html" id="signin">Sign In</a>
-    
   </div>
   </div>
   
@@ -75,7 +65,7 @@
   <!-- slider -->
 <div class="section">
   <div class="heading">
-    <img src="om/hackathon3/Hackathon/Home 2/bgimg.jpg" alt="">
+    <img src="{% static 'om/hackathon3/Hackathon/Home 2/bgimg.jpg' %}" alt="">
     <h1 id="sitename">नि- <span>SHABD</span></h1>
     <h2 id="tagline">" <span class="multiText"></span> "</h2>
   </div>
@@ -86,19 +76,22 @@
 
     <div class="mySlides fade">
       <img
-        src="https://media.istockphoto.com/id/1497810933/photo/friends-legs-and-shoes-on-city-steps-for-bonding-travel-and-urban-break-with-drinks-smoothie.jpg?s=612x612&w=0&k=20&c=VxXdZclDl36tl8zirnq1lHdkAPEZSbJjnUuHQX_dcd8="
+        src="{% static 'farmer.jpg' %}"
         class="images">
-      <div class="text">Caption Text</div>
+      <div class="text"><h1>Support Farmers</h1>
+      <p>Profit shared to farmers</p></div>
     </div>
 
     <div class="mySlides fade">
-      <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNob2VzfGVufDB8fDB8fHww" class="images">
-      <div class="text">Caption Two</div>
+      <img src="{% static 'wp1886352.webp' %}" class="images">
+      <div class="text"><h1>Quality Products Direct from farm</h1>
+      <p></p></div>
     </div>
 
     <div class="mySlides fade">
-      <img src="https://picsum.photos/id/233/1000/500" class="images">
-      <div class="text">Caption Three</div>
+      <img src="{% static 'old-farmer-holding-digital-tablet.webp' %}" class="images">
+      <div class="text"><h1>Search as per Convenience</h1>
+      convenient searching using text, image, voice</div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)"><span>❮</span></a>
@@ -111,14 +104,17 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-  <h1 id="aboutus" style="text-align: center; margin-top: 3vh">About Us</h1>
-  <p style="margin: 15vh 5vw 0 5vw;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti explicabo voluptas laudantium veritatis nam velit veniam placeat voluptatum nulla quo sunt illo adipisci aliquam impedit, ullam rem facere excepturi maiores autem beatae. Et expedita molestiae non dignissimos repudiandae nihil neque beatae nesciunt excepturi quae saepe fugiat consequatur facere assumenda rerum amet, reiciendis totam nostrum distinctio maxime error. Eligendi sapiente earum unde ad iusto quod quaerat sunt nam asperiores, atque, molestias quisquam, debitis culpa explicabo! Inventore perspiciatis, ullam consequatur sunt nihil quisquam quod sapiente quasi. Repellendus quibusdam modi error, similique exercitationem quidem ab. Non quibusdam, fuga voluptatibus est adipisci quasi.</p>
+  <!-- <h1 id="aboutus" style="text-align: center; margin-top: 3vh">About Us</h1>
+  <p style="margin: 15vh 5vw 0 5vw;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti explicabo voluptas laudantium veritatis nam velit veniam placeat voluptatum nulla quo sunt illo adipisci aliquam impedit, ullam rem facere excepturi maiores autem beatae. Et expedita molestiae non dignissimos repudiandae nihil neque beatae nesciunt excepturi quae saepe fugiat consequatur facere assumenda rerum amet, reiciendis totam nostrum distinctio maxime error. Eligendi sapiente earum unde ad iusto quod quaerat sunt nam asperiores, atque, molestias quisquam, debitis culpa explicabo! Inventore perspiciatis, ullam consequatur sunt nihil quisquam quod sapiente quasi. Repellendus quibusdam modi error, similique exercitationem quidem ab. Non quibusdam, fuga voluptatibus est adipisci quasi.</p> -->
 
   
   
 <!-- cardss -->
+<br><br>
+
 
 <div class="container">
+  <hr>
   <header>
       <h1 id="yourshoppingcart">Your Shopping Cart</h1>
       <div class="shopping">
@@ -126,7 +122,10 @@
           <span class="quantity">0</span>
       </div>
   </header>
-
+  
+  <hr>
+  <br> <br>
+  <h1>Products</h1>
   <div class="list">
     
   </div>
@@ -195,7 +194,16 @@
   <script>
     const STATIC_URL = "{% get_static_prefix %}";
   </script>
-  <script src="{% static 'home2_script.js.html' %}"></script>
+  <script src="{% static 'home2_script.js' %}"></script>
+  <script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            )
+        }
+    </script>
 </body>
 
 </html>

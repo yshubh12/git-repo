@@ -58,39 +58,40 @@ closeShopping.addEventListener('click', () => {
 let products = [
     {
         id: 1,
-        name: 'PRODUCT NAME 1',
-        image: STATIC_URL + 'img1.jpg', // Use STATIC_URL
-        price: 100
+        name: 'Peanut Butter (500g)',
+        image: STATIC_URL + 'img1.jpg', // Use STATIC_URL,
+        
+        price: '₹350'
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
+        name: 'Peanut Oil (1L)',
         image: STATIC_URL + 'img2.jpg', // Use STATIC_URL
-        price: 350
+        price: '₹320'
     },
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
+        name: 'Almond Butter (500g)',
         image: STATIC_URL + 'img3.jpg', // Fixed image path
-        price: 220
+        price: '₹750'
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
+        name: 'Almond Oil (200ml)',
         image: STATIC_URL + 'img4.jpg', // Fixed image path
-        price: 120
+        price: '₹370'
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
+        name: 'Wheat Flour (5kg)',
         image: STATIC_URL + 'img5.jpg', // Fixed image path
-        price: 320
+        price: '₹200'
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
+        name: 'Chickpea Flour (500g)',
         image: STATIC_URL + 'img6.jpg', // Fixed image path
-        price: 420
+        price: '₹60'
     }
 ];
 
@@ -103,6 +104,7 @@ function initApp() {
         newDiv.innerHTML = `
             <img src="${value.image}">
             <div class="title">${value.name}</div>
+            
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Cart</button>
             <a href="http://127.0.0.1:5500/Payment%20Gatway/Payment.html">
