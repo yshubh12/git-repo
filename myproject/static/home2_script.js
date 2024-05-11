@@ -61,13 +61,13 @@ let products = [
         name: 'Peanut Butter (500g)',
         image: STATIC_URL + 'img1.jpg', // Use STATIC_URL,
         
-        price: '₹350'
+        price: 350
     },
     {
         id: 2,
         name: 'Peanut Oil (1L)',
         image: STATIC_URL + 'img2.jpg', // Use STATIC_URL
-        price: '₹320'
+        price: 320
     },
     {
         id: 3,
@@ -107,8 +107,8 @@ function initApp() {
             
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Cart</button>
-            <a href="http://127.0.0.1:5500/Payment%20Gatway/Payment.html">
-            <button onclick="">Buy</button>
+            <a href="payment">
+            <a href="payment"><button onclick="">Buy</button></a>
             </a>`;
         list.appendChild(newDiv);
     });
