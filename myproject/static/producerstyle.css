@@ -85,6 +85,10 @@ hr{
     box-shadow: 6px 6px 12px #dddddd, -6px -6px 12px #ffffff;
   }
 
+  #slogan{
+    font-size: 15px;
+  }
+
   #navbar{
     /* position: absolute; */
     /* z-index: -1; */

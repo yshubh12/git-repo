@@ -15,12 +15,13 @@ const driver = window.driver.js.driver;
 const driverObj = driver({
     showProgress: true,
     steps: [
-      { element: '#board1', popover: { title: 'Your Total Produce', description: 'Description' } },
-      { element: '#board2', popover: { title: 'Income Received', description: 'Description' } },
-      { element: '#board3', popover: { title: 'Your Profit Share', description: 'Description' } },
+      { element: '#board1', popover: { title: 'Your Total Produce', description: 'Here is your produced crop that you have entered' } },
+      { element: '#board2', popover: { title: 'Income Received', description: 'Your received income will be shown here' } },
+      { element: '#board3', popover: { title: 'Your Profit Share', description: 'Here is your profit share' } },
       { element: '#google_translate_element', popover: { title: 'Language Changer', description: 'You can change the webpage language simply by selecting your preferable language ' } },
       { element: '.navbar-toggler', popover: { title: 'Options Button', description: 'Click here for more options' } },
       { element: '#produce_form', popover: { title: 'Produce information', description: 'Upload your product information here' } },
+      { element: '#result_produce', popover: { title: 'Produce information', description: 'Upload your product information here' } },
     ]
   });
   
@@ -32,12 +33,13 @@ tour_btn.addEventListener("click",() => {
     const driverObj = driver({
         showProgress: true,
         steps: [
-          { element: '#board1', popover: { title: 'Your Total Produce', description: 'Description' } },
-      { element: '#board2', popover: { title: 'Income Received', description: 'Description' } },
-      { element: '#board3', popover: { title: 'Your Profit Share', description: 'Description' } },
-      { element: '#google_translate_element', popover: { title: 'Language Changer', description: 'You can change the webpage language simply by selecting your preferable language ' } },
-      { element: '.navbar-toggler', popover: { title: 'Options Button', description: 'Click here for more options' } },
-      { element: '#produce_form', popover: { title: 'Produce information', description: 'Upload your product information here' } },
+          { element: '#board1', popover: { title: 'Your Total Produce', description: 'Here is your produced crop that you have entered' } },
+          { element: '#board2', popover: { title: 'Income Received', description: 'Your received income will be shown here' } },
+          { element: '#board3', popover: { title: 'Your Profit Share', description: 'Here is your profit share' } },
+          { element: '#google_translate_element', popover: { title: 'Language Changer', description: 'You can change the webpage language simply by selecting your preferable language ' } },
+          { element: '.navbar-toggler', popover: { title: 'Options Button', description: 'Click here for more options' } },
+          { element: '#produce_form', popover: { title: 'Produce information', description: 'Upload your product information here' } },
+          { element: '#result_produce', popover: { title: 'Produce information', description: 'Upload your product information here' } },
         ]
       });
     driverObj.drive();

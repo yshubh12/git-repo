@@ -25,7 +25,8 @@
     <div id="navbar">
         <nav class="navbar bg-body-tertiary ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">NI-Shabd</a>
+                <a class="navbar-brand" href="#">नि-Shabd<i><p id="slogan">Vocal for local</p></i></a><br>
+              
 
                 <!-- Google Translator -->
                 <div id="google_translate_element"></div>
@@ -39,7 +40,7 @@
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NI-Shabd</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">नि-Shabd</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -109,13 +110,13 @@
     </div>
 
     <!-- Display submitted produce -->
-    <div class="card mt-3">
+    <div class="card mt-3" id="result_produce">
         <div class="card-header">
             <h5>Submitted Produce</h5>
         </div>
         <div class="card-body">
             {% for produce in produces %}
-            <div class="card-text">
+            <div class="card-text"> 
                 <p>Name: {{ produce.name }}</p>
                 <p>Phone No: {{ produce.phone_no }}</p>
                 <p>Address: {{ produce.address }}</p>
